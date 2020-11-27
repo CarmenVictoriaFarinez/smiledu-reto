@@ -1,0 +1,12 @@
+<mat-sidenav-container class="example-container" autosize>
+    <mat-sidenav-content  >
+        <mat-sidenav mode="side"[(opened)]="opened">SIDENAV
+            <button (click)="opened = !opened" > 
+                MAIN</button>
+
+        </mat-sidenav>
+      <button (click)="opened = !opened" > 
+          MAIN</button>
+    </mat-sidenav-content>
+  
+</mat-sidenav-container>
