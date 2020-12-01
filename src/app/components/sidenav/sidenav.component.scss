@@ -1,15 +1,90 @@
+$yellow:#FCD603;
 
-  mat-sidenav-container {
-    height: 100%;
+#toolbarMenu {
+    cursor: pointer;
+    color:gray;
+    width: 45px;
+    margin-left: 8px;
     
-  }
-  
-mat-sidenav, mat-sidenav-content {
-    padding: 5px;
-  }
+}
+#toolbarMenu:hover{
+    color:$yellow;
+}
+#mainToolbar {
+    flex: 1 1 auto;
+   
+}
+mat-toolbar{
+    background-color:$yellow !important;
+    height: 120px;
+}
 
-  mat-sidenav {
-    background-color: lightcoral;
-    width: 100px;
-  }
-  
+mat-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 16px;
+    position: relative;
+    height: 55px;
+}
+
+
+mat-card-title{
+    margin-left: 8px;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+mat-card-subtitle{
+    margin-left: 8px;
+   
+}
+.nav-item:hover{
+color:$yellow;
+}
+.title-menu{
+    margin-left: 18px;
+}
+
+.toolbar-icon {
+    cursor: pointer;
+    margin: 0 8px;
+}
+.icon-perfil{
+    width: 45px;
+}
+.icon-menu{
+    width: 35px;
+}
+
+#sidenav {
+    width: 270px;
+}
+
+#sidenav.menu-close {
+    width: 70px
+}
+
+#sidenav.menu-open {
+    width: 270px
+}
+
+#sidenav .mat-list-item-content {
+    padding: 0;
+}
+
+#sidenav .menu-item {
+    width: 100%;
+    border-radius: 0;
+    text-align: left;
+    //padding: 10px;
+}
+
+#sidenav .menu-item:hover {
+  background: #eee;
+}
+#sidenav .menu-item mat-icon {
+    margin-right: 20px;
+    margin-left: 12px;
+}

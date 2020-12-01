@@ -6,12 +6,22 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss']
 })
-export class SidenavComponent implements OnInit {
-  opened = false;
-  showFiller = false;
-  constructor() { }
+export class SidenavComponent {
 
-  ngOnInit(): void {
+  isMenuOpen = true;
+  contenMargin = 270;
+
+  onToolbarMenuToggle(){
+    console.log('Abre ', this.isMenuOpen);
+    this.isMenuOpen = !this.isMenuOpen;
+
+    if (!this.isMenuOpen) {
+      this.contenMargin = 70;
+    } else {
+      this.contenMargin = 270;
+    }
   }
 
-}
+  }
+
+

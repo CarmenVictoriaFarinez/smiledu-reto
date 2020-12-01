@@ -7,6 +7,12 @@ import { FormsModule } from '@angular/forms';
 
 // Angular material
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSelectModule} from '@angular/material/select';
+
 // Components
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 
@@ -23,7 +29,12 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    FormsModule
+    FormsModule,
+    MatListModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSelectModule
 
   ],
   providers: [],

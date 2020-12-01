@@ -1,12 +1,152 @@
-<mat-sidenav-container class="example-container" autosize>
-    <mat-sidenav-content  >
-        <mat-sidenav mode="side"[(opened)]="opened">SIDENAV
-            <button (click)="opened = !opened" > 
-                MAIN</button>
+<mat-sidenav-container id="sidenavContainer"fullscreen>
+      
+            <mat-sidenav mode="side" #sidenav id="sidenav" 
+                  [class.menu-open]="isMenuOpen"
+                  [class.menu-close]="!isMenuOpen"
+                  opened>
+                    
+              <mat-list>
+                <mat-list-item > 
+                  <div><mat-icon  (click)="onToolbarMenuToggle()" id="toolbarMenu">menu</mat-icon> </div>
+                  <div>
+                    <img src="https://user-images.githubusercontent.com/60799456/100694562-566ea900-335d-11eb-8ba7-80f1aa5aabe4.png" alt="logo">
+                  </div>
+                  
+                </mat-list-item>
+                <mat-card class="nav-item"> 
+                    <div>
+                      <img class="icon-perfil" src="https://user-images.githubusercontent.com/60799456/100695916-499f8480-3360-11eb-8f22-0ae275e0421b.png" alt="user">
+                    </div>
+                    <div>
+                    <mat-card-title>Maria Salvatierra</mat-card-title>
+                    <mat-card-subtitle>Promotora</mat-card-subtitle>
+                  </div>
+                  <mat-select ></mat-select>
+                </mat-card>
+                <mat-card class="nav-item">
+                  <div>
+                    <img class="icon-menu" src="https://user-images.githubusercontent.com/60799456/100702650-15cc5b00-3370-11eb-93d5-deedbe515746.png" alt="">
+                  </div><mat-card-title class="title-menu">Dashboard</mat-card-title>
+                </mat-card>
+                
+                <mat-card class="nav-item">
+                  <div>
+                    <img class="icon-menu" src="https://user-images.githubusercontent.com/60799456/100702707-2f6da280-3370-11eb-956f-93b6f6137147.png" alt="">
+                  </div><mat-card-title class="title-menu">Noticias</mat-card-title>
+                </mat-card>
 
-        </mat-sidenav>
-      <button (click)="opened = !opened" > 
-          MAIN</button>
-    </mat-sidenav-content>
-  
+                <mat-card class="nav-item">
+                  <div>
+                    <img class="icon-menu" src="https://user-images.githubusercontent.com/60799456/100702759-47ddbd00-3370-11eb-9c7f-3114121d8eb9.png" alt="">
+                  </div><mat-card-title class="title-menu">Agenda</mat-card-title>
+                </mat-card>
+              </mat-list>
+              <mat-list>
+                <mat-card class="nav-item">
+                  <div>
+                    <img class="icon-menu" src="https://user-images.githubusercontent.com/60799456/100704948-65ad2100-3374-11eb-8717-df53ca07df07.png" alt="">
+                  </div><mat-card-title class="title-menu">Planificación Institucional</mat-card-title>
+                  <mat-select >
+                    <mat-option value=""></mat-option>
+                    <mat-option class="nav-item"value=" ">Estudiantes</mat-option> 
+                    <mat-option class="nav-item"value=" ">Reportes</mat-option>
+                    <mat-option class="nav-item"value=" ">Pagos</mat-option>
+                  </mat-select>
+                </mat-card>
+                <mat-card class="nav-item">
+                  <div>
+                    <img class="icon-menu" src="https://user-images.githubusercontent.com/60799456/100708166-d73b9e00-3379-11eb-8cc1-b9af41f383d3.png" alt="">
+                  </div><mat-card-title class="title-menu">Talento Humano</mat-card-title>
+                  <mat-select >
+                    <mat-option value=""></mat-option>
+                    <mat-option class="nav-item"value=" ">Estudiantes</mat-option>
+                    <mat-option class="nav-item"value=" ">Reportes</mat-option>
+                    <mat-option class="nav-item"value=" ">Pagos</mat-option>
+                  </mat-select>
+                </mat-card>
+                <mat-card class="nav-item">
+                  <div>
+                    <img class="icon-menu" src="https://user-images.githubusercontent.com/60799456/100708268-ffc39800-3379-11eb-830d-0d83a6f7fe40.png" alt="">
+                  </div><mat-card-title class="title-menu">Tesorería</mat-card-title>
+                  <mat-select >
+                    <mat-option value=""></mat-option>
+                    <mat-option class="nav-item"value=" ">Estudiantes</mat-option>
+                    <mat-option class="nav-item"value=" ">Reportes</mat-option>
+                    <mat-option class="nav-item"value=" ">Pagos</mat-option>
+                  </mat-select>
+                </mat-card>
+                <mat-card class="nav-item">
+                  <div>
+                    <img class="icon-menu" src="https://user-images.githubusercontent.com/60799456/100708550-837d8480-337a-11eb-808a-6535d2c84213.png" alt="">
+                  </div><mat-card-title class="title-menu">Gestión Acádemica</mat-card-title>
+                  <mat-select >
+                    <mat-option value=""></mat-option>
+                    <mat-option class="nav-item"value=" ">Estudiantes</mat-option>
+                    <mat-option class="nav-item"value=" ">Reportes</mat-option>
+                    <mat-option class="nav-item"value=" ">Pagos</mat-option>
+                  </mat-select>
+                </mat-card>
+                <mat-card class="nav-item">
+                  <div>
+                    <img class="icon-menu" src="https://user-images.githubusercontent.com/60799456/100708557-86787500-337a-11eb-8997-4b73324100c5.png" alt="">
+                  </div><mat-card-title class="title-menu">Matrícula</mat-card-title>
+                  <mat-select >
+                    <mat-option value=""></mat-option>
+                    <mat-option class="nav-item"value=" ">Estudiantes</mat-option>
+                    <mat-option class="nav-item"value=" ">Reportes</mat-option>
+                    <mat-option class="nav-item"value=" ">Pagos</mat-option>
+                  </mat-select>
+                </mat-card>
+                <mat-card class="nav-item">
+                  <div>
+                    <img class="icon-menu" src="https://user-images.githubusercontent.com/60799456/100708584-93956400-337a-11eb-92bb-e9b950a6175e.png" alt="">
+                  </div><mat-card-title class="title-menu">Programación Curricular</mat-card-title>
+                  <mat-select >
+                    <mat-option value=""></mat-option>
+                    <mat-option class="nav-item"value=" ">Estudiantes</mat-option>
+                    <mat-option class="nav-item"value=" ">Reportes</mat-option>
+                    <mat-option class="nav-item"value=" ">Pagos</mat-option>
+                  </mat-select>
+                </mat-card>
+                <mat-card class="nav-item">
+                  <div>
+                    <img class="icon-menu" src="https://user-images.githubusercontent.com/60799456/100708602-9abc7200-337a-11eb-954f-99d086c3ae9c.png" alt="">
+                  </div><mat-card-title class="title-menu">Configuración</mat-card-title>
+                  <mat-select >
+                    <mat-option value=""></mat-option>
+                    <mat-option class="nav-item"value=" ">Estudiantes</mat-option>
+                    <mat-option class="nav-item"value=" ">Reportes</mat-option>
+                    <mat-option class="nav-item"value=" ">Pagos</mat-option>
+                  </mat-select>
+                </mat-card>
+              </mat-list>
+              <mat-list>
+                <mat-card class="nav-item">
+                  <div>
+                    <img class="icon-menu" src="https://user-images.githubusercontent.com/60799456/100708932-30580180-337b-11eb-9ecd-121b532e75af.png" alt="">
+                  </div><mat-card-title class="title-menu">Facturación</mat-card-title>
+                </mat-card>
+                <mat-card class="nav-item">
+                  <div>
+                    <img class="icon-menu" src="https://user-images.githubusercontent.com/60799456/100709174-a197b480-337b-11eb-8a9c-8789788ffee4.png" alt="">
+                  </div><mat-card-title class="title-menu">2020 Smiledu-Premium</mat-card-title>
+                </mat-card>
+              </mat-list>
+            </mat-sidenav>
+            <mat-side-content [ngStyle]="{'margin-top.px': 0}" >
+              <mat-toolbar id="mainToobal" >
+                  <mat-toolbar-row>
+                      <span class="example-spacer"></span>
+                      <mat-icon>favorite</mat-icon>
+                      <mat-icon>share</mat-icon>
+                  </mat-toolbar-row>
+              </mat-toolbar>
+            </mat-side-content>
+
 </mat-sidenav-container>
+
+
+
+
+   
+  
