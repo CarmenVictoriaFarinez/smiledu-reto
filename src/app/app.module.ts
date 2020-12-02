@@ -12,9 +12,18 @@ import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import {MatRippleModule} from '@angular/material/core';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatTabsModule} from '@angular/material/tabs';
 
 // Components
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { AcordionsComponent } from './components/acordions/acordions.component';
+import { MaxiCardComponent } from './components/maxi-card/maxi-card.component';
+import { MenuComponentComponent } from './components/menu-component/menu-component.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
 
 
@@ -22,6 +31,10 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
   declarations: [
     AppComponent,
     SidenavComponent,
+    AcordionsComponent,
+    MaxiCardComponent,
+    MenuComponentComponent,
+    TabsComponent,
 
   ],
   imports: [
@@ -34,7 +47,12 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
-    MatSelectModule
+    MatSelectModule,
+    MatInputModule,
+    MatRippleModule,
+    MatExpansionModule,
+    MatMenuModule,
+    MatTabsModule
 
   ],
   providers: [],
