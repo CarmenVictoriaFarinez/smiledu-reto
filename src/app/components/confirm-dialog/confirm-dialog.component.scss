@@ -1,0 +1,26 @@
+table {
+    width: 700px;
+    height: 350px;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 25%;
+  }
+
+
+.maxi-card-header{
+    margin-left: 3%;
+    width: 240px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+
+    .icon-perfil{
+        width: 45px;
+    }
+}

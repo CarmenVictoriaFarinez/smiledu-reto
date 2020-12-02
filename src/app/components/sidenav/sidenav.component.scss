@@ -97,6 +97,9 @@ color:$yellow;
 .icon-menu{
     width: 35px;
 }
+.btn-group{
+    margin-left: 60px;
+}
 
 #sidenav {
     width: 270px;
@@ -127,4 +130,11 @@ color:$yellow;
 #sidenav .menu-item mat-icon {
     margin-right: 20px;
     margin-left: 12px;
+}
+
+.btn-fabs{
+    position: absolute;
+   
+    top: 10%;
+    right: 1%;
 }
