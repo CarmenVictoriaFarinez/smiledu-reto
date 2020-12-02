@@ -40,6 +40,46 @@ mat-card-subtitle{
     margin-left: 8px;
    
 }
+
+mat-form-field-suffix {
+    white-space: nowrap;
+    flex: none;
+    position: relative;
+}
+
+//.gral-container {
+    //display: flex;
+    //flex-direction: row;
+//}
+.position-maxicard{
+    float: right;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+.btn-container{
+margin-left: 70%;
+.btn-header{
+    background-color: transparent;
+    border: none;
+   
+}
+.favorite{
+    color:#2896F3;
+}
+.message{
+    color:white;
+}
+.icons{
+    color: rgb(104, 104, 104);
+}
+}
+.info-title{
+    margin-left: 25px;
+}
+.title-spacer{
+    color:white;
+}
 .nav-item:hover{
 color:$yellow;
 }

@@ -135,12 +135,57 @@
             </mat-sidenav>
             <mat-side-content [ngStyle]="{'margin-top.px': 0}" >
               <mat-toolbar id="mainToobal" >
-                  <mat-toolbar-row>
-                      <span class="example-spacer"></span>
-                      <mat-icon>favorite</mat-icon>
-                      <mat-icon>share</mat-icon>
+                  <mat-toolbar-row class="d-inline-block">
+                      <span class="title-spacer">MATRICULA | ESTUDIANTES</span>
+                      <div class="btn-container">
+                        <button class="btn-header icons">
+                          <mat-icon>notifications_none</mat-icon>
+                        </button>
+                      
+                        <button class="btn-header message">
+                          <mat-icon> message</mat-icon>
+                        </button>
+
+                        <button class="btn-header icons">
+                          <mat-icon>more_vert</mat-icon>
+                        </button>
+
+                        <button class="btn-header favorite">
+                          <mat-icon>favorite</mat-icon>
+                        </button>
+                    </div>
                   </mat-toolbar-row>
               </mat-toolbar>
+              <div class="gral-container">
+                <section>
+                  <form class="example-form">
+                    <mat-icon class="icon-menu nav-item" matSuffix>search</mat-icon>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Buscar Estudiante</mat-label>
+                        <input type="tel" matInput placeholder="">
+                        <mat-icon class="nav-item" matSuffix>menu</mat-icon>
+                    </mat-form-field>
+                    <div class="info-title">
+                      <p>FILTRO: PREMIUM COLLAGE-SURCO</p>
+                      <p>Busca a tus estudiantes</p>
+                    </div>
+                  </form>
+                  <div>
+                      <div class="info-title">
+                        <p>Año lectivo 2020
+                      
+                          <mat-icon class="nav-item icons" matSuffix>edit</mat-icon>
+                          <mat-icon class="nav-item icons" matSuffix>menu</mat-icon>
+                      
+                        </p>
+                      </div>
+                    <app-acordions></app-acordions>
+                  </div>
+                </section>
+                <section class="position-maxicard">
+                  <app-maxi-card></app-maxi-card>
+                </section>
+              </div>
             </mat-side-content>
 
 </mat-sidenav-container>
