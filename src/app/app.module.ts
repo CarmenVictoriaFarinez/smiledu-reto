@@ -18,6 +18,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 
@@ -28,6 +30,9 @@ import { MaxiCardComponent } from './components/maxi-card/maxi-card.component';
 import { MenuComponentComponent } from './components/menu-component/menu-component.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { ExpansionStudentComponent } from './components/expansion-student/expansion-student.component';
+import { DialogComponent } from './components/dialog/dialog.component';
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
+import { BtnFabsComponent } from './components/btn-fabs/btn-fabs.component';
 
 
 
@@ -40,6 +45,9 @@ import { ExpansionStudentComponent } from './components/expansion-student/expans
     MenuComponentComponent,
     TabsComponent,
     ExpansionStudentComponent,
+    DialogComponent,
+    ConfirmDialogComponent,
+    BtnFabsComponent,
 
   ],
   imports: [
@@ -58,7 +66,9 @@ import { ExpansionStudentComponent } from './components/expansion-student/expans
     MatExpansionModule,
     MatMenuModule,
     MatTabsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTableModule,
+    MatPaginatorModule
 
   ],
   providers: [],
