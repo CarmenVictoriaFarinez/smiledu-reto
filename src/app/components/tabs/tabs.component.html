@@ -1,8 +1,70 @@
 <mat-card>
   <mat-tab-group>
-      <mat-tab label="Información">Información </mat-tab>
-      <mat-tab label="Ficha Médica">Ficha Médica </mat-tab>
-      <mat-tab label="Ficha Psicológica">Ficha Psicológica </mat-tab>
-      <mat-tab label="Compromisos">Compromisos</mat-tab>
+      <mat-tab label="Información">
+       
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>Personal</mat-expansion-panel-header>
+        <table>
+            <mat-form-field appearance="fill">
+              <mat-label>Nombre <span clase="asterisco">*</span></mat-label>
+              <mat-select >
+                <mat-option value="Ellie Gonzalez Perez">Ellie </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+              <mat-label>Apellido paterno<span clase="asterisco">*</span></mat-label>
+              <mat-select >
+                <mat-option value="Ellie Gonzalez Perez">Gonzalez</mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+              <mat-label>Apellido materno <span clase="asterisco">*</span></mat-label>
+              <mat-select >
+                <mat-option value="Ellie Gonzalez Perez">Perez</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </table>
+
+        <table>
+            <mat-form-field appearance="fill">
+              <mat-label>Sexo <span clase="asterisco">*</span></mat-label>
+              <mat-select disableRipple>
+                <mat-option value="1">Femenino</mat-option>
+                <mat-option value="2">Masculino</mat-option>
+
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+              <mat-label>Tipo de Documento <span clase="asterisco">*</span></mat-label>
+              <mat-select disableRipple>
+                <mat-option value="1">DNI</mat-option>
+                <mat-option value="2">Carnet de extranjeria</mat-option>
+               
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+              <mat-label>N° Documento <span clase="asterisco">*</span></mat-label>
+              <mat-select >
+                <mat-option value="Ellie Gonzalez Perez">07865433</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </table>
+          </mat-expansion-panel>
+        
+        <app-expansion-student></app-expansion-student>
+      </mat-tab>
+      <mat-tab label="Ficha Médica">
+        <app-expansion-student></app-expansion-student>
+      </mat-tab>
+      <mat-tab label="Ficha Psicológica">
+        <app-expansion-student></app-expansion-student>
+      </mat-tab>
+      <mat-tab label="Compromisos">
+        <app-expansion-student></app-expansion-student>
+      </mat-tab>
     </mat-tab-group>
 </mat-card>

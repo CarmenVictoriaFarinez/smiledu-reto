@@ -17,6 +17,9 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatDialogModule} from '@angular/material/dialog';
+
+
 
 // Components
 import { SidenavComponent } from './components/sidenav/sidenav.component';
@@ -24,6 +27,7 @@ import { AcordionsComponent } from './components/acordions/acordions.component';
 import { MaxiCardComponent } from './components/maxi-card/maxi-card.component';
 import { MenuComponentComponent } from './components/menu-component/menu-component.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { ExpansionStudentComponent } from './components/expansion-student/expansion-student.component';
 
 
 
@@ -35,6 +39,7 @@ import { TabsComponent } from './components/tabs/tabs.component';
     MaxiCardComponent,
     MenuComponentComponent,
     TabsComponent,
+    ExpansionStudentComponent,
 
   ],
   imports: [
@@ -52,7 +57,8 @@ import { TabsComponent } from './components/tabs/tabs.component';
     MatRippleModule,
     MatExpansionModule,
     MatMenuModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDialogModule
 
   ],
   providers: [],

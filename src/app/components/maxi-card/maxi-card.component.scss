@@ -1,3 +1,8 @@
+mat-card{
+    right: 50px;
+    height: 600px;
+}
+
 .maxi-card-header{
     margin-left: 3%;
     width: 240px;
@@ -12,7 +17,56 @@
 
 .tabs-section{
     position: absolute;
-    top: 5%;
-    left: 100%;
+    top: 1.1%;
+    left: 81.5%;
+    height: 700px;
 
 }
+
+.btn-pago{
+    width: 78px;
+    height: 40px;
+    border: 2px solid #7AB9B3;
+    color: #7AB9B3;
+    border-radius: 25px;
+    background-color: transparent;
+    
+}
+.btn-history{
+    width: 168px;
+    height: 40px;
+    border: 2px solid #FCD603;
+    color: #FCD603;
+    border-radius: 35px;
+   // margin: 10px 0;
+    background-color: transparent;
+}
+
+//ripple
+
+.example-ripple-container {
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0px 10px;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /** Styles to make the demo look better. */
+  .example-ripple-checkbox {
+    margin: 6px 12px 6px 0;
+  }
+  
+  .example-ripple-form-field {
+    margin: 0 12px 0 0;
+  }
